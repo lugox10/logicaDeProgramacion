@@ -4,6 +4,11 @@ public class Ejercicio_2_Futbol {
 
     public static void main(String[] args) {
 
+            /* resultados de la fecha
+               equipo1 0-3 equipo2
+               equipo3 3-0 equipo4
+               equipo5 1-1 equipo6   */
+
         int equipo1 = 0;
         int equipo2 = 3;
         int equipo3 = 3;
@@ -20,7 +25,6 @@ public class Ejercicio_2_Futbol {
 
         for (int i = 0; i < equipos.length; i++) {
             System.out.println(equipos[i] + " - " + puntos[i] + " puntos");
-
             if (puntos[i] > mejorPuntaje) {
                 mejorPuntaje = puntos[i];
                 mejorEquipo = i;
