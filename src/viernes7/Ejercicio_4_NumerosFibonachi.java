@@ -21,8 +21,6 @@ public class Ejercicio_4_NumerosFibonachi {
         } else {
 
             long[] secuenciaFibonacci = new long[cantidadDeNumeros];
-
-
             secuenciaFibonacci[0] = 0;
             if (cantidadDeNumeros > 1) {
                 secuenciaFibonacci[1] = 1;

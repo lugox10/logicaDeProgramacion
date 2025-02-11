@@ -1,12 +1,10 @@
 package lunes10;
 
-import java.util.Arrays;
-
 public class E_1_ArreglosDe10Numeros {
 
     public static void main(String[] args) {
 
-        int[] numero = {51, 54, 5, 22, 6, 9, 7, 8, 5, 6};
+        int[] numero = {51, 54, 5, 22, 6, 9, 7, 8, 5, 4};
 
         int mayor = 0;
         int menor = 0;
@@ -22,6 +20,7 @@ public class E_1_ArreglosDe10Numeros {
             } else if (numero[i] > mayor) {
                 mayor = numero[i];
             }
+
             suma = suma + numero[i];
         }
 
