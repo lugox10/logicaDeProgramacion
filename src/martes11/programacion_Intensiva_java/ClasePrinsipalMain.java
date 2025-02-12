@@ -1,4 +1,4 @@
-package programacion_Intensiva_java;
+package martes11.programacion_Intensiva_java;
 
 public class ClasePrinsipalMain {
 
