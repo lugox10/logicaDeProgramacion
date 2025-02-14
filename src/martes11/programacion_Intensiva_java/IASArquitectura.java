@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class IASArquitectura {
 
     private Scanner entradaDatos;
-    private List<Estudiante> estudiantes;
+    private List<EstudianteIAS> estudiantes;
 
     public IASArquitectura() {
         this.entradaDatos = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class IASArquitectura {
         for (int i = 0; i < cantidadEstudiantes; i++) {
             System.out.print("Ingrese el nombre del estudiante: ");
             String nombre = entradaDatos.nextLine();
-            Estudiante estudiante = new Estudiante(nombre);
+            EstudianteIAS estudiante = new EstudianteIAS(nombre);
 
             for (int j = 0; j < MateriasDeProgramacion.values().length; j++) {
                 List<Double> notas = new ArrayList<>();
@@ -57,5 +57,7 @@ public class IASArquitectura {
             estudiantes.get(i).mostrarResultados();
         }
     }
+
+
 }
 

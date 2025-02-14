@@ -3,12 +3,12 @@ package martes11.programacion_Intensiva_java;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Estudiante {
+public class EstudianteIAS {
 
     private String nombre;
     private List<Materias> materias;
 
-    public Estudiante(String nombre) {
+    public EstudianteIAS(String nombre) {
         this.nombre = nombre;
         this.materias = new ArrayList<>();
 
