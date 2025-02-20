@@ -15,14 +15,25 @@ public class CuentaBancaria {
         System.out.println( " tipo de Cuenta :"+ tipoDeCuenta + " numero :" + NumeroDecuenta + " saldo :" + saldo );
     }
 
-    public String transferencia(String cuentaDestino,float cantidad){
+    public String transferencia(CuentaBancaria cuentaDestino, float cantidad) {
 
-        if( saldo > cantidad){
-            saldo-=cantidad;
-           return "tranferencia exitosa a la cuenta numero: "+ cuentaDestino;
-        }else{
-            return "transferenci fallida";
-        }
+        if (saldo < cantidad)
+            return " Saldo insuficiente para la transferencia.";
+
+        debitar(cantidad);
+        cuentaDestino.acreditar(cantidad);
+
+        return "Transferencia exitosa de $" + cantidad +  " a la cuenta número: " + cuentaDestino.getNumeroDecuenta();
+
+    }
+
+    private void debitar(float cantidad) {
+        saldo -= cantidad;
+    }
+
+
+    private void acreditar(float cantidad) {
+        saldo += cantidad;
     }
 
 
